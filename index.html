@@ -1,0 +1,74 @@
+<!-- The code that is written here is after viewing the Udacity lectures and attributes/properties used in the Udacity videos or website links provided in Udacity lectures. 
+For resposive images I took help from this website https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
+For flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+For CSS https://www.drupal.org/docs/develop/standards/css/css-formatting-guidelines
+For general issues I also searched on stackoverflow.com
+I used Canva.com to design my logo-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>MPortfolio</title>
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+	<body id="container">
+		<header>
+			<div class="title">
+				<div class="heading"> <!-- Name & Title-->
+					<h1>MARIUM TALHA</h1>
+					<h2>FRONT-END NINJA</h2>
+				</div>
+				<div class="logo">
+					 <!--logo created using canva.com--> 
+					 <!--
+					<img srcset="img/MT_100.jpg 100w, img/MT_266.jpg 266w" sizes="(max-width: 768px) 100px,266px" src="img/MT_266.jpg" alt="logo">
+					-->
+					<img src="img/MT_266.jpg" alt="logo">
+				</div>
+			</div>
+			<hr class="uline">
+		</header>
+
+		<main>
+			<div class="portfolio"> <!-- This section contains all art work. The images are art work by my daughter Sarah Talha-->
+				<div class="mainartwork">
+					<!--
+					<img srcset="img/IMG_A_360.jpg 300w, img/IMG_A_720 700w, img/IMG_A_1000.jpg 1000w" sizes="(max-width: 360px) 300px, (max-width: 768px) 700px,1000px" src="img/IMG_A_1000.jpg" alt="Main Art">
+					-->
+					<img class= "mainimg" src="img/IMG_A_1000.jpg" alt="Main Art">
+				</div>
+				<div>
+					<h1 class="art">Featured Work</h1> <!-- Section for featured art work. Different images based on different devices-->
+					<div class="featuredart">
+						<div class="artwork">
+							<!--
+							<img srcset="img/IMG_B_100.jpg 100w, img/IMG_B_200.jpg 200w, img/IMG_B_300.jpg 300w" sizes="(max-width: 360px) 100px,(min-width: 361px) and (max-width: 768px) 200px,300px" src="img/IMG_B_300.jpg" alt="Art1">
+							-->
+							<img class="artimage" src="img/IMG_B_300.jpg" alt="Art1">
+							<p>SUNFLOWER</p>
+							<a href="https://www.google.com/"> https://www.google.com/ </a>
+						</div>
+						<div class="artwork">
+							<!--
+							<img srcset="img/IMG_C_100.jpg 100w, img/IMG_C_200.jpg 200w, img/IMG_C_300.jpg 300w" sizes="(max-width: 360px) 100px,(min-width: 361px) and (max-width: 768px) 200px,300px" src="img/IMG_C_300.jpg" alt="Art1">
+							-->
+							<img src="img/IMG_C_300.jpg" alt="Art1">
+							<p>HEART</p>
+							<a href="https://www.google.com/"> https://www.google.com/ </a>
+						</div>
+						<div class="artwork">
+							<!--
+							<img srcset="img/IMG_D_100.jpg 100w, img/IMG_D_200.jpg 200w, img/IMG_D_300.jpg 300w" sizes="(max-width: 360px) 100px,(min-width: 361px) and (max-width: 768px) 200px,300px" src="img/IMG_D_300.jpg" alt="Art1">
+							-->
+							<img src="img/IMG_D_300.jpg" alt="Art1">
+							<p>RANDOM</p>
+							<a href="https://www.google.com/"> https://www.google.com/ </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
